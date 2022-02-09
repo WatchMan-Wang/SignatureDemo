@@ -18,12 +18,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-/**
- * @ClassName: StatusBarUtil
- * @Description:
- * @Author: dingchao
- * @Date: 2018/11/8 15:15
- */
 public class StatusBarUtil {
     public final static int TYPE_MIUI = 0;
     public final static int TYPE_FLYME = 1;

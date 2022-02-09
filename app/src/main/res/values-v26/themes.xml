@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomAppTheme_textInputLayout" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:textColorHint">#BDBDBD</item>
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">#15C5CE</item>
+        <item name="colorControlHighlight">#63A3D7</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:colorError">#63A3D7</item>
+
+    </style>
+</resources>

@@ -6,13 +6,13 @@
   <path
       android:pathData="M55,1l30,0l-5,3l-30,0z"
       android:strokeWidth="1"
-      android:fillColor="#00AAD4"
+      android:fillColor="@color/tapblue"
       android:fillType="evenOdd"
       android:strokeColor="#00000000"/>
   <path
       android:pathData="M154,1l30,0l-5,3l-30,0z"
       android:strokeWidth="1"
-      android:fillColor="#00AAD4"
+      android:fillColor="@color/tapblue"
       android:fillType="evenOdd"
       android:strokeColor="#00000000"/>
   <path

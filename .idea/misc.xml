@@ -4,10 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/bg_dialog_common_tip_corner_white.xml" value="0.2611111111111111" />
+        <entry key="app/src/main/res/drawable/button_shape.xml" value="0.2657407407407407" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2361111111111111" />
         <entry key="app/src/main/res/drawable/img_guide_tip_top.xml" value="0.2611111111111111" />
+        <entry key="app/src/main/res/drawable/radio_btn_style.xml" value="0.2657407407407407" />
+        <entry key="app/src/main/res/drawable/radio_checked_shape.xml" value="0.2657407407407407" />
+        <entry key="app/src/main/res/drawable/radio_uncheck_shape.xml" value="0.2657407407407407" />
+        <entry key="app/src/main/res/drawable/rounded_corners_bg.xml" value="0.2361111111111111" />
+        <entry key="app/src/main/res/drawable/xui_icon_checkbox.xml" value="0.2657407407407407" />
+        <entry key="app/src/main/res/drawable/xui_icon_checkbox_checked.xml" value="0.2657407407407407" />
+        <entry key="app/src/main/res/drawable/xui_icon_checkbox_normal.xml" value="0.2657407407407407" />
         <entry key="app/src/main/res/layout/activity_base.xml" value="0.2135258358662614" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2066869300911854" />
         <entry key="app/src/main/res/layout/dialog_guide_tips.xml" value="0.22871376811594202" />
+        <entry key="app/src/main/res/layout/statementwindow.xml" value="0.19384057971014493" />
       </map>
     </option>
   </component>

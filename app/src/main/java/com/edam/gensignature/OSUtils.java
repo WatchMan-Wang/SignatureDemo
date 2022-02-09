@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 
-// Rom类型判断的工具类
+// Rom 类型判断的工具类
 public class OSUtils {
     public static final String ROM_MIUI = "MIUI";
     public static final String ROM_EMUI = "EMUI";
