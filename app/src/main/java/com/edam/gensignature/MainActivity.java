@@ -154,8 +154,8 @@ public class MainActivity extends AppCompatActivity {
         if (!b) {
             if (hasFocus) {
                 if (isFirstLaunch) {
-                    isFirstLaunch = false;
                     initStatementWindow();
+                    isFirstLaunch = false;
                 }
             }
         }
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean isNotShow) {
                 Log.d(TAG, String.valueOf(isNotShow));
                 isNotShowStatementWindow = isNotShow;
-                editor.putBoolean("isNotShowStatemen", isNotShowStatementWindow)
+                editor.putBoolean("isNotShowStatement", isNotShowStatementWindow)
                         .commit();
             }
         });
