@@ -97,15 +97,15 @@ public class MainActivity extends AppCompatActivity {
                     String signValidString = signatureTool.getSignatureString(signatures[0].toByteArray());
                     md5String[0] = signValidString;
                     textView.setVisibility(View.VISIBLE);
-                    textView.setText(signValidString);
+                    textView.setText("MD5： " + signValidString);
                     buttonCopy.setVisibility(View.VISIBLE);
                     Log.d(TAG, signValidString);
                 } catch (Exception e) {
                     Log.d(TAG, e.toString());
                     textView.setVisibility(View.VISIBLE);
-                    textView.setText("获取签名信息失败，请检查包名是否有误");
+                    textView.setText("获取签名信息失败，请检查输入的包名是否有误");
 
-                    buttonCopy.setVisibility(View.INVISIBLE);
+                    buttonCopy.setVisibility(View.GONE);
                 }
             }
         });

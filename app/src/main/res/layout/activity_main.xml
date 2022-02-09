@@ -10,9 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg"
+        android:orientation="vertical"
         android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:orientation="vertical">
+        android:paddingEnd="20dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -27,49 +27,58 @@
                 android:layout_height="wrap_content"
                 android:hint="请输入应用包名"
                 android:imeActionId="6"
-                android:textSize="15sp"
                 android:imeOptions="actionDone"
                 android:inputType="textVisiblePassword"
                 android:maxLines="1"
-                android:singleLine="true"/>
-<!--            <FrameLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent">-->
-<!--                -->
-<!--                <Button-->
-<!--                    android:layout_width="15dp"-->
-<!--                    android:layout_height="15dp"-->
-<!--                    android:layout_gravity="right|center_vertical"-->
-<!--                    android:background="@drawable/clear_icon"/>-->
-<!--            </FrameLayout>-->
-
+                android:singleLine="true"
+                android:textSize="15sp" />
+            <!--            <FrameLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent">-->
+            <!--                -->
+            <!--                <Button-->
+            <!--                    android:layout_width="15dp"-->
+            <!--                    android:layout_height="15dp"-->
+            <!--                    android:layout_gravity="right|center_vertical"-->
+            <!--                    android:background="@drawable/clear_icon"/>-->
+            <!--            </FrameLayout>-->
 
 
         </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/btn_get_md5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="获取签名"
-            android:textColor="@color/white"
-            android:background="@drawable/button_shape"/>
 
         <TextView
             android:id="@+id/text_show_md5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="LeeJiEun"
             android:textSize="15sp"
-            android:visibility="gone"/>
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_get_md5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:text="获取签名"
+            android:textColor="@color/white" />
+
         <Button
             android:id="@+id/bth_copy_md5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/button_shape"
             android:text="复制"
             android:textColor="@color/white"
-            android:visibility="invisible"/>
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="此工具仅用于开发者获取所属应用的签名信息，校验开发者平台填写的正确性。应用签名的正确性需由开发者自行确定。" />
 
     </LinearLayout>
 
