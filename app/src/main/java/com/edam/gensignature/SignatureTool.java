@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.content.pm.SigningInfo;
+import android.os.Build;
 import android.util.Log;
 
 import java.security.MessageDigest;
@@ -19,10 +21,16 @@ public class SignatureTool {
             return null;
         }
         try {
-            PackageInfo info = context.getPackageManager().getPackageInfo(packageName, PackageManager.GET_SIGNATURES);
-            if (null != info) {
-                Log.d(TAG, info.signatures.toString());
-                return info.signatures;
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.P){
+                PackageInfo packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_SIGNING_CERTIFICATES);
+                SigningInfo signingInfo = packageInfo.signingInfo;
+                return signingInfo.getApkContentsSigners();
+            }else {
+                PackageInfo info = context.getPackageManager().getPackageInfo(packageName, PackageManager.GET_SIGNATURES);
+                if (null != info) {
+                    Log.d(TAG, info.signatures.toString());
+                    return info.signatures;
+                }
             }
             return null;
         } catch (PackageManager.NameNotFoundException e) {
