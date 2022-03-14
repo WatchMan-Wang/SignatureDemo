@@ -21,7 +21,7 @@ public class SignatureTool {
             return null;
         }
         try {
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.P){
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.S){
                 PackageInfo packageInfo = context.getPackageManager().getPackageInfo(context.getPackageName(), PackageManager.GET_SIGNING_CERTIFICATES);
                 SigningInfo signingInfo = packageInfo.signingInfo;
                 return signingInfo.getApkContentsSigners();
