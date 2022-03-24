@@ -7,4 +7,9 @@
     <string name="info">此工具仅用于开发者获取所属应用的签名信息，校验开发者平台填写的正确性，应用签名的正确性需由开发者自行确定</string>
     <string name="pkgname_isempty">应用包名为空</string>
     <string name="paste">已复制到剪切板</string>
+    <string name="statement">声  明</string>
+    <string name="confirm">确  定</string>
+    <string name="cancel">取  消</string>
+    <string name="never_show">以后不再提示此信息</string>
+    <string name="statement_info">此工具意在获取安装到安卓设备的第三方应用的签名 MD5 信息，仅供开发者校验所属应用签名信息，点击「确定」继续操作，点击「取消」则退出程序。</string>
 </resources>

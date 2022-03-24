@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
@@ -16,7 +17,7 @@
             android:layout_width="fill_parent"
             android:layout_height="40dp"
             android:gravity="center"
-            android:text="声  明"
+            android:text="@string/statement"
             android:textColor="#000000"
             android:textSize="18sp" />
 
@@ -33,13 +34,13 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="8dp"
             android:gravity="center"
-            android:text="此工具意在获取安装到安卓设备的第三方应用的签名 MD5 信息，仅供开发者校验所属应用签名信息，点击「确定」继续操作，点击「取消」则退出程序。"
+            android:text="@string/statement_info"
             android:textColor="#868C92"
             android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="25dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
             android:layout_marginBottom="10dp"
             android:orientation="horizontal">
@@ -49,16 +50,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:button="@drawable/xui_icon_checkbox"
-                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
                 android:checked="false"
-                android:scaleX="0.8"
-                android:scaleY="0.8" />
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="以后不再提示此信息"
+                android:text="@string/never_show"
                 android:textColor="#BDBEBD" />
         </LinearLayout>
 
@@ -80,9 +81,10 @@
                 android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text="确 定"
+                android:text="@string/confirm"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <View
                 android:layout_width="0.5dp"
@@ -96,9 +98,10 @@
                 android:layout_height="match_parent"
                 android:background="#FFFFFF"
                 android:gravity="center"
-                android:text="取 消"
+                android:text="@string/cancel"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
