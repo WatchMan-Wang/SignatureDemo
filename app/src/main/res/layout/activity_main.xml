@@ -25,24 +25,13 @@
                 android:id="@+id/packagename_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="请输入应用包名"
+                android:hint="@string/input_app_pkgname"
                 android:imeActionId="6"
                 android:imeOptions="actionDone"
                 android:inputType="textVisiblePassword"
                 android:maxLines="1"
                 android:singleLine="true"
                 android:textSize="15sp" />
-            <!--            <FrameLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="match_parent">-->
-            <!--                -->
-            <!--                <Button-->
-            <!--                    android:layout_width="15dp"-->
-            <!--                    android:layout_height="15dp"-->
-            <!--                    android:layout_gravity="right|center_vertical"-->
-            <!--                    android:background="@drawable/clear_icon"/>-->
-            <!--            </FrameLayout>-->
-
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:background="@drawable/button_shape"
-            android:text="获取签名"
+            android:text="@string/get_signature"
             android:textColor="@color/white" />
 
         <Button
@@ -71,14 +60,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:background="@drawable/button_shape"
-            android:text="复制"
+            android:text="@string/copy"
             android:textColor="@color/white"
             android:visibility="gone" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="此工具仅用于开发者获取所属应用的签名信息，校验开发者平台填写的正确性。应用签名的正确性需由开发者自行确定。" />
+            android:text="@string/info" />
 
     </LinearLayout>
 

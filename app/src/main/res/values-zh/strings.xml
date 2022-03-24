@@ -4,7 +4,7 @@
     <string name="get_signature">获取签名</string>
     <string name="copy">复制</string>
     <string name="get_signature_exception">获取签名信息失败，请检查输入的包名是否有误</string>
-    <string name="info">此工具仅用于开发者获取所属应用的签名信息，校验开发者平台填写的正确性，应用签名的正确性需由开发者自行确定</string>
+    <string name="info">此工具仅用于开发者获取所属应用的签名信息，校验开发者平台填写的正确性。应用签名的正确性需由开发者自行确定。</string>
     <string name="pkgname_isempty">应用包名为空</string>
     <string name="paste">已复制到剪切板</string>
 </resources>

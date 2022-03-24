@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
                 SignatureTool signatureTool = new SignatureTool();
                 if (packageName == null | packageName == "") {
-                    Toast.makeText(MainActivity.this, "应用包名为空", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, getResources().getString(R.string.pkgname_isempty), Toast.LENGTH_SHORT).show();
                     return;
                 }
                 try {
@@ -103,7 +103,8 @@ public class MainActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     Log.d(TAG, e.toString());
                     textView.setVisibility(View.VISIBLE);
-                    textView.setText("获取签名信息失败，请检查输入的包名是否有误");
+
+                    textView.setText(getResources().getString(R.string.get_signature_exception));
 
                     buttonCopy.setVisibility(View.GONE);
                 }
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                 ClipboardManager clipboardManager = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                 ClipData clipData = ClipData.newPlainText(null, md5String[0]);
                 clipboardManager.setPrimaryClip(clipData);
-                Toast.makeText(getApplicationContext(), "已复制到剪切板", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), getResources().getString(R.string.paste), Toast.LENGTH_SHORT).show();
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {

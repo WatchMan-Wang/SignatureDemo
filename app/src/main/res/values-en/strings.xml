@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GenSignature</string>
+    <string name="input_app_pkgname">Please enter the application package name</string>
+    <string name="get_signature">Get signature</string>
+    <string name="copy">COPY</string>
+    <string name="get_signature_exception">Failed to obtain signature information, please check whether the entered package name is correct</string>
+    <string name="info">This tool is only used for developers to obtain the signature information of their applications and to verify the correctness of the developer platform. The correctness of the application signature needs to be determined by the developer.</string>
+    <string name="pkgname_isempty">Application package name is empty</string>
+    <string name="paste">Copied to clipboard</string>
+</resources>
