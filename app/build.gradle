@@ -8,7 +8,7 @@ android {
     defaultConfig {
         applicationId "com.edam.gensignature"
         minSdk 19
-        targetSdk 31
+        targetSdk 29
         versionCode 1
         versionName "1.0"
 
